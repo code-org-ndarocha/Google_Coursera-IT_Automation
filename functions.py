@@ -62,7 +62,7 @@ circle_area(10)
 
 def rectangle_area(base,height):
       area = base*height
-  print("The area is " + str(area))
+      print("The area is " + str(area))
   
 rectangle_area(5,6)
 
@@ -99,8 +99,8 @@ print(smaller, bigger)
 
 def lucky_number(name):
       number = len(name) * 9
-  message = "Hello " + name + ". Your lucky number is " + str(number)
-  return message
+      message = "Hello " + name + ". Your lucky number is " + str(number)
+      return message
 	    
 print(lucky_number("Kay"))
 print(lucky_number("Cameron"))
