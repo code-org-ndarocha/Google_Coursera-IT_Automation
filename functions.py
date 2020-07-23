@@ -45,3 +45,17 @@ def greet(name):
 res = greet("Chris")
 
 print(res)
+
+def lucky_number(name):
+    number = len(name)*9
+    print("Hello " + name + " You're lucky number is " +str(number))
+    
+lucky_number("kay")
+lucky_number("Cameroon")
+
+def circle_area(radius):
+    pi = 3.14
+    area = pi * (radius ** 2)
+    print(area)
+    
+circle_area(10)
