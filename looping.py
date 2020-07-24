@@ -167,5 +167,12 @@ def factorial(n):
         result *= i
     return result
 
-print(factorial(4)) # should return 24
+print(factorial(4)) # should sreturn 24
 print(factorial(5))
+
+def to_celsius(x):
+    return (x-32)*5/9
+
+for i in range(0,101,10):
+    print(x,to_celsius(x))
+    
