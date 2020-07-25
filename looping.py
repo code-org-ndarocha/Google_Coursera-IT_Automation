@@ -219,4 +219,30 @@ def validate_users(users):
             print(user + " is invalid")
 
 validate_users("purplecat")
+
+
+def factorial(n):
+    result = 1
+    for x in range(1,n):
+        result = x * result
+    return result
+
+for n in range(0,10):
+    print(n, factorial(n+1))
     
+for x in range(1,11):
+    print(x**3)
+    
+for i in range(0,15):
+    print(7*i)
+    
+    def retry(operation, attempts):
+        for n in range(attempts):
+            if operation():
+                print("Attempt " + str(n) + " succeeded")
+                break
+            else:
+                print("Attempt " + str(n) + " failed")
+
+#retry(create_user, 3)
+#retry(stop_service, 5)
