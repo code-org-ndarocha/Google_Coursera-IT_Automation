@@ -25,3 +25,42 @@ def sum_positive_numbers(n):
 
 print(sum_positive_numbers(3)) # Should be 6
 print(sum_positive_numbers(5)) # Should be 15
+
+
+
+
+def is_power_of(number, base):
+     print(str(number) + " " + str(base))
+     if number < base:
+         return number == 1
+
+     return is_power_of(number//base, base)
+
+print(is_power_of(8,2)) # Should be True
+print(is_power_of(64,4)) # Should be True
+print(is_power_of(70,10)) # Should be False
+
+
+def count_users(group):
+      count = 0
+      for member in get_members(group):
+          
+          if is_group(member):
+              count += count_users(member)
+          else:
+              count += 1
+      return count-1
+
+print(count_users("sales")) # Should be 3
+print(count_users("engineering")) # Should be 8
+print(count_users("everyone")) # Should be 18
+
+def sum_positive_numbers(n):
+    if n < 1:
+        return 0
+    return n + sum_positive_numbers(n-1)
+
+print(sum_positive_numbers(3)) # Should be 6
+print(sum_positive_numbers(5)) # Should be 15
+
+
