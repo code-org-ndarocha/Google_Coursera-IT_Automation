@@ -20,3 +20,8 @@ string.isalpha() Returns True if there are only alphabetic characters in the str
 string.split() / string.split(delimiter) Returns a list of substrings that were separated by whitespace / delimiter
 string.replace(old, new) Returns a new string where all occurrences of old have been replaced by new.
 delimiter.join(list of strings) Returns a new string with all the strings joined by the delimiter
+
+
+
+###Important of formatting strings
+https://www.coursera.org/learn/python-crash-course/supplement/JbXSA/formatting-strings-cheat-sheet
