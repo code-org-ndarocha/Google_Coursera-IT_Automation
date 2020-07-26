@@ -94,3 +94,41 @@ def initials(phrase):
 print(initials("Universal Serial Bus")) # Should be: USB
 print(initials("local area network")) # Should be: LAN
 print(initials("Operating system")) # Should be: OS
+
+
+#Formatting Strings
+
+name = "Manny"
+number = len(name)*3
+print("Hello {}, your lucky number is {}".format(name,number))
+
+
+test= "Nikhil Da Rocha".split()
+res = ""
+for i in test:
+    print(i[0])
+    
+
+
+print("Your lucky number is {number}, {name}.".format(name=name, number=len(name)*3))
+
+
+def student_grade(name, grade):
+    	return "{name} received {grade}% on the exam".format(name=name, grade=grade)
+
+print(student_grade("Reed", 80))
+print(student_grade("Paige", 92))
+print(student_grade("Jesse", 85))
+
+
+price = 7.5
+with_tax = price*1.09
+print(price, with_tax)
+
+print("Base price: ${:.2f}. With Tax: ${:.2f}".format(price,with_tax))
+
+def to_celsius(x):
+    return (x-32)*5/9
+
+for x in range(0,101,10):
+    print("{:>3} F | {:6.2F} C".format(x, to_celsius(x)))
