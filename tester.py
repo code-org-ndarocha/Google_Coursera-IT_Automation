@@ -40,3 +40,12 @@ def pig_latin(text):
 print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
 print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"
 
+def email_list(domains):
+    emails = []
+    for keys, values in domains.items():
+     for i  in values:
+         print(values, keys)
+         emails.append(keys)
+    return(emails)
+
+print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
