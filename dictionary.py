@@ -21,11 +21,48 @@ print(file_counts)
 
 
 toc = {"Introduction":1, "Chapter 1":4, "Chapter 2":11, "Chapter 3":25, "Chapter 4":30}
-___ # Epilogue starts on page 39
-___ # Chapter 3 now starts on page 24
-___ # What are the current contents of the dictionary?
-___ # Is there a Chapter 5?
+
 toc["Epilogue"] = 39
 toc["Chapter 3"] =24
 print(toc)
 print("Chapter 5" in toc)
+
+
+file_nos = {"jpg":10, "txt":14, "csv":2, "py":23}
+for extension in file_nos:
+    print(extension)
+
+
+for ext, amount in file_nos.items():
+    print("There are {} files with the .{} extension".format(amount,ext))
+    
+    
+print(file_nos.keys())
+print(file_nos.values())
+
+cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+for keys, values in cool_beasts.items():
+    print("{} have {}".format(keys, values))
+    
+    
+def count_letters(text):
+    result = {}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] += 1
+        
+    return result
+
+print(count_letters("aaaaa"))
+
+
+wardrobe = {"shirt":["red","blue","white"], "jeans":["blue","black"]}
+for item, values in wardrobe.items():
+    #print(values, item)
+    for i in values:
+        print(i , item)
+        
+        
+
+print("Set!")
